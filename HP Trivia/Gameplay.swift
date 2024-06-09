@@ -332,7 +332,9 @@ struct Gameplay: View {
         .ignoresSafeArea()
         .onAppear {
             animateViewsIn = true
-//            playMusic()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                playMusic()
+            }
         }
     }
     

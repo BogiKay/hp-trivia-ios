@@ -60,9 +60,9 @@ struct ContentView: View {
                                 Text("Recent scores")
                                     .font(.title2)
                                 
-                                Text("33")
-                                Text("27")
-                                Text("15")
+                                Text("\(game.recentScores[0])")
+                                Text("\(game.recentScores[1])")
+                                Text("\(game.recentScores[2])")
                             }
                             .font(.title3)
                             .padding(.horizontal)
@@ -126,6 +126,12 @@ struct ContentView: View {
                                 .fullScreenCover(isPresented: $playGame, content: {
                                     Gameplay()
                                         .environmentObject(game)
+                                        .onAppear {
+                                            audioPlayer.setVolume(0, fadeDuration: 2)
+                                        }
+                                        .onDisappear {
+                                            audioPlayer.setVolume(1, fadeDuration: 3)
+                                        }
                                 })
                                 .disabled(store.books.contains(.active) ? false : true)
                                 .sheet(isPresented: $showSettings) {
@@ -173,7 +179,7 @@ struct ContentView: View {
             .frame(width: geo.size.width, height: geo.size.height)
         }.ignoresSafeArea()
             .onAppear {
-                //                playAudio()
+                playAudio()
                 animateViewsIn = true
             }
     }
