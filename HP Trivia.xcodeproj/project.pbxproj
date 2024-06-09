@@ -17,6 +17,8 @@
 		7618883D2C03D334003E83F1 /* Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618883C2C03D334003E83F1 /* Instructions.swift */; };
 		7618883F2C03D86A003E83F1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7618883E2C03D86A003E83F1 /* Settings.swift */; };
 		763D17BA2C15BEB400FADC85 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D17B92C15BEB400FADC85 /* Store.swift */; };
+		763D17BC2C15C73E00FADC85 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D17BB2C15C73E00FADC85 /* Question.swift */; };
+		763D17BE2C15C96A00FADC85 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D17BD2C15C96A00FADC85 /* Game.swift */; };
 		769D4F2A2C0FA3FB00F438B3 /* Gameplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 769D4F292C0FA3FB00F438B3 /* Gameplay.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		7618883E2C03D86A003E83F1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		763D17B82C15BDBE00FADC85 /* HPConfig.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = HPConfig.storekit; sourceTree = "<group>"; };
 		763D17B92C15BEB400FADC85 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		763D17BB2C15C73E00FADC85 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		763D17BD2C15C96A00FADC85 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		769D4F292C0FA3FB00F438B3 /* Gameplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gameplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +75,9 @@
 				769D4F292C0FA3FB00F438B3 /* Gameplay.swift */,
 				7618883E2C03D86A003E83F1 /* Settings.swift */,
 				7618883C2C03D334003E83F1 /* Instructions.swift */,
+				763D17BD2C15C96A00FADC85 /* Game.swift */,
 				763D17B92C15BEB400FADC85 /* Store.swift */,
+				763D17BB2C15C73E00FADC85 /* Question.swift */,
 				7618883A2C034502003E83F1 /* Constants.swift */,
 				763D17B82C15BDBE00FADC85 /* HPConfig.storekit */,
 				761888362C0341F7003E83F1 /* trivia.json */,
@@ -163,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				763D17BA2C15BEB400FADC85 /* Store.swift in Sources */,
+				763D17BE2C15C96A00FADC85 /* Game.swift in Sources */,
+				763D17BC2C15C73E00FADC85 /* Question.swift in Sources */,
 				7618882B2C0340F1003E83F1 /* ContentView.swift in Sources */,
 				769D4F2A2C0FA3FB00F438B3 /* Gameplay.swift in Sources */,
 				761888292C0340F1003E83F1 /* HP_TriviaApp.swift in Sources */,
