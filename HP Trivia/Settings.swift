@@ -40,9 +40,11 @@ struct Settings: View {
                                 }
                                 .task {
                                     store.books[i] = .active
+                                    store.saveStatus()
                                 }
                                 .onTapGesture {
                                     store.books[i] = .inactive
+                                    store.saveStatus()
                                 }
                             }
                                
@@ -64,6 +66,7 @@ struct Settings: View {
                                 }
                                 .onTapGesture {
                                     store.books[i] = .active
+                                    store.saveStatus()
                                 }
                             }
                             

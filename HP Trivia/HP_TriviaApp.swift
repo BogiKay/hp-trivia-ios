@@ -19,6 +19,8 @@ struct HP_TriviaApp: App {
                 .environmentObject(store)
                 .task {
                     await store.loadProducts()
+                    game.loadScores()
+                    store.loadStatus()
                 }
         }
     }
