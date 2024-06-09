@@ -321,7 +321,7 @@ struct Gameplay: View {
         .ignoresSafeArea()
         .onAppear {
             animateViewsIn = true
-            playMusic()
+//            playMusic()
         }
     }
     
